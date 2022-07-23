@@ -1,4 +1,9 @@
-.person-card {
+ .person-cards {
+     display: flex;
+     gap: 30px;
+ }
+
+.person-cards__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,11 +15,11 @@
     background-color: var(--color-text-background);
 }
 
-.person-card__image {
+.person-cards__image {
     margin-bottom: 30px;
 }
 
-.person-card__name {
+.person-cards__name {
     margin-bottom: 10px;
 
     color: var(--title-text-color);
@@ -25,9 +30,10 @@
     letter-spacing: 0.03em;
 }
 
-.person-card__work-position {
+.person-cards__position {
     margin-bottom: 16px;
 
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;

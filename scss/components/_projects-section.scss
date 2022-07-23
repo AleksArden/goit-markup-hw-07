@@ -1,7 +1,13 @@
 .projects-section {
   background-color: var(--color-text-background);
-}
 
-.projects-section__menu {
-  margin-bottom: 50px;
+  &__menu {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }

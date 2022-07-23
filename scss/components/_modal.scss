@@ -1,26 +1,24 @@
 .modal {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 528px;
-    height: 581px;
-    border-radius: 4px;
-    padding: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  padding: 40px;
 
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--time-duration) var(--timing-function);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--time-duration) var(--timing-function);
 
-    background-color: var(--color-text-background);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+  background-color: var(--color-text-background);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
-
-.backdrop.is-hidden .modal {
+  .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.7);
-}
+  }
 
-.modal__title {
+  &__title {
     margin-bottom: 12px;
 
     color: var(--title-text-color);
@@ -29,9 +27,9 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-}
+  }
 
-.modal__btn-close {
+  &__btn-close {
     position: absolute;
     display: flex;
     align-items: center;
@@ -48,9 +46,10 @@
     fill: var(--title-text-color);
     background-color: var(--color-text-background);
     cursor: pointer;
-}
 
-.modal__btn-close:hover,
-.modal__btn-close:focus {
-    fill: var(--accent-color);
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
 }

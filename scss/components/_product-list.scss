@@ -1,8 +1,13 @@
-.product-thumb {
+.product-list {
+    display: flex;
+    gap: 30px;
+} 
+
+.product-list__item {
     position: relative;
 }
 
-.product-thumb__overlay {
+.product-list__overlay {
     position: absolute;
 
     display: flex;
@@ -16,6 +21,6 @@
     background: var(--bg-cards-benefits);
 }
 
-.product-thumb__subtitle {
+.product-list__name {
     color: var(--color-text-background);
 }

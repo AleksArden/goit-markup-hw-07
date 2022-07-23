@@ -21,12 +21,12 @@
     background-color var(--time-duration) var(--timing-function);
 
   color: var(--fill-icons);
-}
 
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: var(--accent-color);
-  color: var(--color-text-background);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--color-text-background);
+  }
 }
 
 .social-list__icon {
