@@ -1,0 +1,21 @@
+.product-thumb {
+    position: relative;
+}
+
+.product-thumb__overlay {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    background: var(--bg-cards-benefits);
+}
+
+.product-thumb__subtitle {
+    color: var(--color-text-background);
+}

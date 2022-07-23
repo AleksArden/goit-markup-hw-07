@@ -1,0 +1,10 @@
+.features-section {
+  padding-top: 0;
+
+  background-color: var(--color-text-background);
+}
+
+.features-section__list {
+  display: flex;
+  gap: 30px;
+}
