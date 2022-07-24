@@ -1,13 +1,9 @@
 .form-field-checkbox {
-  display: flex;
-  justify-content: center;
-
-  margin-bottom: 30px;
+  @include flexed (flex, null, center);
 }
 
 .form-field-checkbox__label {
-   display: flex;
-   align-items: center;
+  @include flexed (flex, center, null);
    gap: 8px;
 
    font-weight: 400;

@@ -1,7 +1,11 @@
-.project-card {}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
 
-.project-card__link {
+.portfolio__link {
   display: block;
   transition: box-shadow var(--time-duration) var(--timing-function);
 
@@ -12,12 +16,12 @@
   }
 }
 
-.project-card__thumb {
+.portfolio__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.project-card__overlay {
+.portfolio__overlay {
   position: absolute;
   padding: 63px 24px;
   left: 0;
@@ -30,14 +34,14 @@
 
   background: var(--color-portfolio-overlay);
 
-.project-card__link:hover & {
+.portfolio__link:hover & {
         transform: translateY(0);
     }
 }
 
 
 
-.project-card__proposition {
+.portfolio__proposition {
   color: var(--color-text-background);
   font-weight: 400;
   font-size: 18px;
@@ -45,14 +49,14 @@
   letter-spacing: 0.03em;
 }
 
-.project-card__content {
+.portfolio__content {
   padding: 20px 24px 20px 24px;
   border: 1px solid var(--color-border-card);
 
   background-color: var(--color-text-background);
 }
 
-.project-card__name {
+.portfolio__name {
   margin-bottom: 4px;
 
   color: var(--title-text-color);
@@ -62,7 +66,7 @@
   letter-spacing: 0.06em;
 }
 
-.project-card__description {
+.portfolio__description {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;

@@ -1,12 +1,17 @@
-.client-card {
+  .company-cards {
+    @include flexed (flex, center, null);
+   
+    gap: 30px;
+  }
+  
+  .company-cards__item {
   width: 170px;
   height: 92px;
 }
 
-.client-card__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.company-cards__link {
+  @include flexed;
+
   width: 100%;
   height: 100%;
   border: 1px solid var(--fill-icons);
@@ -24,6 +29,6 @@
     }
 }
 
-.client-card__icon {
+.company-cards__icon {
   fill: currentColor;
 }

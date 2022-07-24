@@ -10,9 +10,8 @@
 .product-list__overlay {
     position: absolute;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   @include flexed;
+   
     left: 0;
     bottom: 0;
     width: 100%;

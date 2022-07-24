@@ -1,6 +1,5 @@
 .social-list {
-  display: flex;
-  align-items: center;
+ @include flexed (flex, center, null);
   gap: 10px;
 }
 
@@ -10,9 +9,7 @@
 }
 
 .social-list__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexed;
   width: 100%;
   height: 100%;
   border-radius: 50%;

@@ -9,6 +9,7 @@
 }
 
 .header-contacs__link {
+  @include flexed (inline-flex, center, null);
   display: inline-flex;
   align-items: center;
   padding: 32px 0;

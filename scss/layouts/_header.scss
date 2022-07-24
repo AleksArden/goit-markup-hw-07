@@ -4,8 +4,7 @@
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
+ @include flexed (flex, center, null);
 }
 
 .header__logo {

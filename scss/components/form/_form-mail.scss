@@ -8,8 +8,7 @@
 }
 
 .form-mail__form {
-  display: flex;
-  align-items: center;
+ @include flexed (flex, center, null);
   gap: 12px;
 }
 
@@ -19,6 +18,8 @@
 }
 
 .form-mail__input {
+@include flexed (flex, center, null);
+
   padding: 15px 10px;
   width: 100%;
   height: 100%;
@@ -33,8 +34,7 @@
   font-size: 16px;
   line-height: 1.25em;
 
-  display: flex;
-  align-items: center;
+  
   letter-spacing: 0.03em;
   color: var(--color-text-background);
   background-color: var(--color-background-primary);
